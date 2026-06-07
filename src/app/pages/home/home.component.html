@@ -1,0 +1,132 @@
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Automatización + IA aplicada</p>
+        <h1>Menos fricción operacional. Más tiempo para crecer.</h1>
+        <p class="lead">
+          En Órbita conectamos personas, procesos y tecnología para que tu empresa
+          deje de mover información manualmente y comience a operar con flujos inteligentes.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" [href]="calendlyUrl" target="_blank" rel="noopener">
+            Agendar diagnóstico gratuito
+          </a>
+          <a class="btn btn-secondary" href="#diagnostico">
+            Ver qué incluye
+          </a>
+        </div>
+
+        <div class="tags" aria-label="Áreas donde Órbita puede ayudar">
+          <span>CRM</span>
+          <span>ERP</span>
+          <span>WhatsApp</span>
+          <span>Reportes</span>
+          <span>Agentes IA</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Ejemplo de flujo automatizado">
+        <div class="orbit"></div>
+        <article>
+          <span>Entrada</span>
+          <strong>Formulario / correo / WhatsApp</strong>
+        </article>
+        <article>
+          <span>IA</span>
+          <strong>Clasifica, resume y prioriza</strong>
+        </article>
+        <article>
+          <span>Salida</span>
+          <strong>CRM actualizado + alerta al equipo</strong>
+        </article>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section intro">
+    <div class="container intro-grid">
+      <h2>La mayoría de las empresas no necesita más herramientas. Necesita que sus herramientas trabajen juntas.</h2>
+      <p>
+        La información ya existe, pero muchas veces vive repartida entre correos,
+        planillas, sistemas internos y conversaciones. Órbita ayuda a conectar esos
+        puntos para reducir trabajo manual y crear procesos medibles.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Servicios</p>
+        <h2>Soluciones diseñadas para operaciones reales.</h2>
+      </div>
+
+      <div class="service-grid">
+        <article *ngFor="let service of services">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.text }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section method" id="metodo">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Método</p>
+        <h2>Partimos pequeño, medimos rápido y escalamos lo que funciona.</h2>
+      </div>
+
+      <div class="steps">
+        <article *ngFor="let step of steps">
+          <span>{{ step[0] }}</span>
+          <h3>{{ step[1] }}</h3>
+          <p>{{ step[2] }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cases" id="casos">
+    <div class="container cases-grid">
+      <div>
+        <p class="kicker">Casos de uso</p>
+        <h2>Procesos que podrías automatizar esta semana.</h2>
+      </div>
+
+      <div class="case-list">
+        <article>
+          <strong>Seguimiento comercial</strong>
+          <p>Lead entra por formulario, se clasifica, se crea en CRM y se notifica al ejecutivo.</p>
+        </article>
+        <article>
+          <strong>Reportes automáticos</strong>
+          <p>Datos de múltiples fuentes se consolidan y envían en un resumen semanal.</p>
+        </article>
+        <article>
+          <strong>Gestión documental</strong>
+          <p>La IA resume, clasifica y extrae información clave de documentos repetitivos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta" id="diagnostico">
+    <div class="container cta-panel">
+      <div>
+        <p class="kicker">Diagnóstico</p>
+        <h2>Descubre dónde está la fricción en tu operación.</h2>
+        <p>
+          En una reunión de 30 minutos identificamos procesos manuales, oportunidades
+          de automatización y posibles casos de uso con IA.
+        </p>
+      </div>
+
+      <a class="btn btn-primary" [href]="calendlyUrl" target="_blank" rel="noopener">
+        Agendar diagnóstico
+      </a>
+    </div>
+  </section>
+</main>

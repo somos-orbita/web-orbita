@@ -1,0 +1,39 @@
+.footer {
+  padding: 54px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.brand {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+p {
+  max-width: 540px;
+}
+
+nav {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+nav a:hover {
+  color: var(--lime);
+}
+
+@media (max-width: 740px) {
+  .footer-grid {
+    flex-direction: column;
+  }
+}
