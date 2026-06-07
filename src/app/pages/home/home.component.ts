@@ -2,11 +2,12 @@ import { Component, OnInit, inject } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { SeoService } from '../../shared/seo/seo.service';
 import { environment } from '../../../environments/environment';
+import { HeroComponent } from "./hero/hero.component";
 
 @Component({
   selector: 'orbita-home',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, HeroComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
