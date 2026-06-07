@@ -1,0 +1,16 @@
+<section class="section method" id="metodo">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Método</p>
+      <h2>Partimos pequeño, medimos rápido y escalamos lo que funciona.</h2>
+    </div>
+
+    <div class="steps">
+      <article *ngFor="let step of steps">
+        <span>{{ step[0] }}</span>
+        <h3>{{ step[1] }}</h3>
+        <p>{{ step[2] }}</p>
+      </article>
+    </div>
+  </div>
+</section>

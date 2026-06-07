@@ -1,0 +1,29 @@
+:host { display: block; }
+
+/* estilos para la sección Método */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.steps article {
+  min-height: 285px;
+  padding: 28px;
+  border-radius: 26px;
+  background: linear-gradient(135deg, var(--purple), #9274ff);
+  overflow: hidden;
+}
+
+.steps span {
+  display: block;
+  margin-bottom: 60px;
+  color: var(--lime);
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -.08em;
+}
+
+.steps p {
+  color: rgba(255,255,255,.82);
+}

@@ -1,0 +1,29 @@
+:host { display: block; }
+
+/* estilos para la sección Casos */
+.cases {
+  background: rgba(255,255,255,.025);
+}
+
+.case-list {
+  display: grid;
+  gap: 14px;
+}
+
+.case-list article {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--card);
+}
+
+.case-list strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--lime);
+}
+
+.case-list p {
+  margin: 0;
+  color: var(--muted);
+}
