@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { SeoService } from '../../shared/seo/seo.service';
 import { environment } from '../../../environments/environment';
-import { HeroComponent } from "./hero/hero.component";
+import { HeroComponent } from './hero/hero.component';
 
 @Component({
   selector: 'orbita-home',
@@ -18,34 +18,58 @@ export class HomeComponent implements OnInit {
 
   readonly services = [
     {
-      title: 'Automatización de procesos',
-      text: 'Transformamos tareas repetitivas en flujos automáticos que reducen errores y liberan tiempo.'
+      title: 'Automatización operacional',
+      text: 'Convertimos tareas repetitivas, traspasos manuales y seguimientos internos en flujos automáticos.'
     },
     {
-      title: 'Integración de plataformas',
-      text: 'Conectamos CRM, ERP, formularios, WhatsApp, correo, bases de datos y APIs.'
+      title: 'Operación asistida por IA',
+      text: 'Diseñamos asistentes internos que resumen, clasifican, priorizan y ayudan a tomar mejores decisiones.'
     },
     {
-      title: 'Agentes de IA operacionales',
-      text: 'Creamos asistentes que clasifican, resumen, priorizan y apoyan a tu equipo.'
+      title: 'Integración de sistemas',
+      text: 'Conectamos CRM, ERP, formularios, WhatsApp, correo, planillas, bases de datos y APIs.'
     },
     {
-      title: 'Diagnóstico de fricción',
-      text: 'Detectamos oportunidades concretas para automatizar y priorizamos por impacto.'
+      title: 'Diseño estratégico de procesos',
+      text: 'Ordenamos oportunidades por impacto comercial, esfuerzo técnico y valor operacional.'
     }
   ];
 
   readonly steps = [
-    ['01', 'Mapeamos tu operación', 'Entendemos cómo trabaja tu equipo y dónde se pierde tiempo.'],
-    ['02', 'Priorizamos oportunidades', 'Elegimos procesos simples, medibles y de alto impacto.'],
-    ['03', 'Implementamos el flujo', 'Construimos integraciones, automatizaciones o agentes según el caso.'],
-    ['04', 'Medimos y escalamos', 'Optimizamos los resultados y repetimos donde exista valor.']
+    ['01', 'Analizamos la operación', 'Entendemos cómo vende, atiende, administra y decide tu equipo.'],
+    ['02', 'Detectamos fricción', 'Identificamos tareas que consumen tiempo, duplican trabajo o dependen demasiado de personas clave.'],
+    ['03', 'Diseñamos la solución', 'Definimos qué automatizar, qué asistir con IA y qué mantener bajo criterio humano.'],
+    ['04', 'Implementamos y medimos', 'Construimos, conectamos, entrenamos al equipo y ajustamos según resultados reales.']
+  ];
+
+  readonly analysisAreas = [
+    'Procesos comerciales y seguimiento de oportunidades',
+    'Traspaso de información entre equipos y plataformas',
+    'Reportes, control de gestión y alertas operacionales',
+    'Tareas administrativas repetitivas',
+    'Documentos, correos y conversaciones que requieren clasificación o resumen',
+    'Decisiones que hoy dependen de información dispersa'
+  ];
+
+  readonly outcomes = [
+    {
+      title: 'Más foco comercial',
+      text: 'El equipo dedica menos tiempo a ordenar información y más tiempo a vender, atender clientes o abrir crecimiento.'
+    },
+    {
+      title: 'Menos dependencia manual',
+      text: 'La operación deja de sostenerse en recordatorios, planillas, copias de datos y tareas invisibles.'
+    },
+    {
+      title: 'Mejor control',
+      text: 'Los procesos se vuelven medibles, trazables y más fáciles de mejorar con datos concretos.'
+    }
   ];
 
   ngOnInit(): void {
     this.seo.update({
       title: 'Órbita | Automatización e IA para empresas en Chile y LATAM',
-      description: 'Órbita ayuda a empresas a reducir fricción operacional conectando procesos, plataformas e inteligencia artificial.',
+      description: 'Órbita analiza operaciones comerciales, administrativas y estratégicas para diseñar automatizaciones e IA aplicada a empresas.',
       path: ''
     });
   }

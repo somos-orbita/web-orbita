@@ -1,44 +1,40 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="kicker">Automatización + IA aplicada</p>
-      <h1 [class.fade-out]="isFading">{{ visiblePhrase }}</h1>
+      <p class="kicker">Agencia de automatización e IA aplicada</p>
+      <h1>Tu empresa no necesita más operación manual. Necesita sistemas que trabajen contigo.</h1>
       <p class="lead">
-        En Órbita conectamos personas, procesos y tecnología para que tu empresa
-        deje de mover información manualmente y comience a operar con flujos inteligentes.
+        En Órbita analizamos tu operación comercial, administrativa y estratégica para
+        diseñar herramientas a medida que automatizan procesos o asisten a tu equipo con IA.
       </p>
 
       <div class="actions">
         <a class="btn btn-primary" [href]="calendlyUrl" target="_blank" rel="noopener">
-          Agendar diagnóstico gratuito
+          Agendar diagnóstico
         </a>
-        <a class="btn btn-secondary" href="#diagnostico">
-          Ver qué incluye
+        <a class="btn btn-secondary" href="#enfoque">
+          Entender el enfoque
         </a>
       </div>
 
-      <div class="tags" aria-label="Áreas donde Órbita puede ayudar">
-        <span>CRM</span>
-        <span>ERP</span>
-        <span>WhatsApp</span>
-        <span>Reportes</span>
-        <span>Agentes IA</span>
+      <div class="tags" aria-label="Qué hace Órbita">
+        <span *ngFor="let proofPoint of proofPoints">{{ proofPoint }}</span>
       </div>
     </div>
 
-    <aside class="hero-card" aria-label="Ejemplo de flujo automatizado">
+    <aside class="hero-card" aria-label="Método de trabajo de Órbita">
       <div class="orbit"></div>
       <article>
-        <span>Entrada</span>
-        <strong>Formulario / correo / WhatsApp</strong>
+        <span>01 Diagnóstico</span>
+        <strong>Detectamos dónde la operación consume tiempo, energía y margen.</strong>
       </article>
       <article>
-        <span>IA</span>
-        <strong>Clasifica, resume y prioriza</strong>
+        <span>02 Diseño</span>
+        <strong>Priorizamos flujos que impactan ventas, eficiencia o control.</strong>
       </article>
       <article>
-        <span>Salida</span>
-        <strong>CRM actualizado + alerta al equipo</strong>
+        <span>03 Ejecución</span>
+        <strong>Construimos automatizaciones, integraciones y asistentes internos.</strong>
       </article>
     </aside>
   </div>
