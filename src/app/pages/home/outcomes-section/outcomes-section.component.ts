@@ -11,16 +11,19 @@ import { NgFor } from '@angular/common';
 export class OutcomesSectionComponent {
   readonly outcomes = [
     {
-      title: 'Más foco comercial',
-      text: 'Menos tiempo ordenando información y más tiempo vendiendo, atendiendo clientes o abriendo crecimiento.'
+      value: '01',
+      title: 'Equipos con más foco',
+      text: 'Las personas dejan de perseguir datos y recordatorios para concentrarse en clientes, decisiones y crecimiento.'
     },
     {
-      title: 'Menos dependencia manual',
-      text: 'Menos recordatorios, planillas, copias de datos y tareas invisibles sosteniendo la operación.'
+      value: '02',
+      title: 'Procesos más trazables',
+      text: 'Cada flujo queda conectado, medible y visible para que la operación no dependa de tareas invisibles.'
     },
     {
-      title: 'Mejor control',
-      text: 'Procesos más medibles, trazables y fáciles de mejorar con datos concretos.'
+      value: '03',
+      title: 'IA aplicada con criterio',
+      text: 'Automatizamos lo repetitivo y dejamos espacio para que el equipo intervenga donde importa el juicio humano.'
     }
   ];
 }

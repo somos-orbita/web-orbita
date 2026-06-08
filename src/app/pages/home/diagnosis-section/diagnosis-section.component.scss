@@ -2,6 +2,10 @@
   display: block;
 }
 
+.section-title span {
+  color: var(--lime);
+}
+
 .analysis-list {
   display: grid;
   gap: 12px;

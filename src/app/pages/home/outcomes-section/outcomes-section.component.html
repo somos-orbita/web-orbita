@@ -2,11 +2,16 @@
   <div class="container">
     <div class="section-head">
       <p class="kicker">Resultado</p>
-      <h2 class="section-title">El objetivo es operar con menos desgaste y más foco.</h2>
+      <h2 class="section-title">La mejora se nota cuando las personas recuperan foco.</h2>
+      <p class="section-copy">
+        No se trata de usar IA por usar IA. Se trata de conectar procesos, datos y equipos
+        para que cada área opere con menos fricción y mejor información.
+      </p>
     </div>
 
-    <div class="outcome-grid auto-grid">
+    <div class="outcome-grid">
       <article class="glass-card" *ngFor="let outcome of outcomes">
+        <span>{{ outcome.value }}</span>
         <h3>{{ outcome.title }}</h3>
         <p>{{ outcome.text }}</p>
       </article>
