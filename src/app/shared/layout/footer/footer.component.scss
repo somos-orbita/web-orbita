@@ -1,5 +1,5 @@
 .footer {
-  padding: 54px 0;
+  padding: 48px 0;
   border-top: 1px solid var(--border);
   color: var(--muted);
 }
@@ -14,7 +14,7 @@
   display: inline-block;
   margin-bottom: 12px;
   color: var(--text);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 900;
 }
 
@@ -30,6 +30,10 @@ nav {
 
 nav a:hover {
   color: var(--lime);
+}
+
+nav a {
+  transition: color .2s var(--ease-soft);
 }
 
 @media (max-width: 740px) {

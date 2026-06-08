@@ -1,6 +1,6 @@
 <section class="hero">
   <div class="container hero-grid">
-    <div class="hero-copy">
+    <div class="hero-copy reveal">
       <p class="kicker">Agencia de automatización e IA aplicada</p>
       <h1>Tu empresa no necesita más operación manual. Necesita sistemas que trabajen contigo.</h1>
       <p class="lead">
@@ -8,7 +8,7 @@
         diseñar herramientas a medida que automatizan procesos o asisten a tu equipo con IA.
       </p>
 
-      <div class="actions">
+      <div class="actions reveal reveal-delay-1">
         <a class="btn btn-primary" [href]="calendlyUrl" target="_blank" rel="noopener">
           Agendar diagnóstico
         </a>
@@ -17,12 +17,12 @@
         </a>
       </div>
 
-      <div class="tags" aria-label="Qué hace Órbita">
-        <span *ngFor="let proofPoint of proofPoints">{{ proofPoint }}</span>
+      <div class="pill-list reveal reveal-delay-2" aria-label="Qué hace Órbita">
+        <span class="pill" *ngFor="let proofPoint of proofPoints">{{ proofPoint }}</span>
       </div>
     </div>
 
-    <aside class="hero-card" aria-label="Método de trabajo de Órbita">
+    <aside class="hero-card reveal reveal-delay-2 float-soft" aria-label="Método de trabajo de Órbita">
       <div class="orbit"></div>
       <article>
         <span>01 Diagnóstico</span>

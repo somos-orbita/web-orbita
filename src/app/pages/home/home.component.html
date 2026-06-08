@@ -1,10 +1,10 @@
 <main>
   <orbita-hero [calendlyUrl]="calendlyUrl"></orbita-hero>
 
-  <section class="section intro" id="enfoque">
-    <div class="container intro-grid">
-      <h2>No vendemos un chatbot genérico. Diseñamos sistemas para que tu operación funcione mejor.</h2>
-      <p>
+  <section class="section intro scroll-reveal" id="enfoque">
+    <div class="container section-grid">
+      <h2 class="section-title">No vendemos un chatbot genérico. Diseñamos sistemas para que tu operación funcione mejor.</h2>
+      <p class="section-copy">
         Muchas empresas ya tienen las herramientas, la información y el equipo.
         El problema está en la fricción diaria: datos que se copian a mano, tareas
         que dependen de seguimiento humano y decisiones que llegan tarde porque la
@@ -13,12 +13,12 @@
     </div>
   </section>
 
-  <section class="section diagnosis" id="diagnostico">
-    <div class="container diagnosis-grid">
+  <section class="section section-muted diagnosis scroll-reveal" id="diagnostico">
+    <div class="container section-grid">
       <div>
         <p class="kicker">Diagnóstico</p>
-        <h2>Analizamos dónde la empresa pierde tiempo, foco y capacidad de crecimiento.</h2>
-        <p>
+        <h2 class="section-title">Analizamos dónde la empresa pierde tiempo, foco y capacidad de crecimiento.</h2>
+        <p class="section-copy">
           Revisamos procesos comerciales, operacionales y estratégicos para identificar
           qué puede automatizarse, qué debe ser asistido por IA y qué necesita rediseño
           antes de construir.
@@ -26,7 +26,7 @@
       </div>
 
       <div class="analysis-list" aria-label="Áreas que analiza Órbita">
-        <article *ngFor="let area of analysisAreas">
+        <article class="glass-card" *ngFor="let area of analysisAreas">
           <span></span>
           <p>{{ area }}</p>
         </article>
@@ -34,19 +34,19 @@
     </div>
   </section>
 
-  <section class="section" id="servicios">
+  <section class="section scroll-reveal" id="servicios">
     <div class="container">
       <div class="section-head">
         <p class="kicker">Ejecución</p>
-        <h2>Construimos herramientas que se adaptan a cómo opera tu empresa.</h2>
-        <p>
+        <h2 class="section-title">Construimos herramientas que se adaptan a cómo opera tu empresa.</h2>
+        <p class="section-copy">
           Cada solución nace del diagnóstico. Puede ser un flujo automático, una integración,
           un asistente interno con IA o una combinación de piezas conectadas.
         </p>
       </div>
 
-      <div class="service-grid">
-        <article *ngFor="let service of services">
+      <div class="service-grid auto-grid">
+        <article class="glass-card" *ngFor="let service of services">
           <h3>{{ service.title }}</h3>
           <p>{{ service.text }}</p>
         </article>
@@ -54,14 +54,14 @@
     </div>
   </section>
 
-  <section class="section method" id="metodo">
+  <section class="section method scroll-reveal" id="metodo">
     <div class="container">
       <div class="section-head">
         <p class="kicker">Método</p>
-        <h2>Partimos con claridad estratégica y avanzamos hacia ejecución medible.</h2>
+        <h2 class="section-title">Partimos con claridad estratégica y avanzamos hacia ejecución medible.</h2>
       </div>
 
-      <div class="steps">
+      <div class="steps auto-grid">
         <article *ngFor="let step of steps">
           <span>{{ step[0] }}</span>
           <h3>{{ step[1] }}</h3>
@@ -71,23 +71,23 @@
     </div>
   </section>
 
-  <section class="section cases" id="casos">
-    <div class="container cases-grid">
+  <section class="section section-muted cases scroll-reveal" id="casos">
+    <div class="container section-grid">
       <div>
         <p class="kicker">Casos de uso</p>
-        <h2>Procesos donde la automatización y la IA generan impacto real.</h2>
+        <h2 class="section-title">Procesos donde la automatización y la IA generan impacto real.</h2>
       </div>
 
       <div class="case-list">
-        <article>
+        <article class="glass-card">
           <strong>Seguimiento comercial</strong>
           <p>Un lead entra, se clasifica, se registra en CRM, se asigna responsable y se activa seguimiento.</p>
         </article>
-        <article>
+        <article class="glass-card">
           <strong>Control de gestión</strong>
           <p>Datos de distintas fuentes se consolidan en reportes automáticos con alertas para decisiones clave.</p>
         </article>
-        <article>
+        <article class="glass-card">
           <strong>Trabajo administrativo asistido</strong>
           <p>La IA resume documentos, ordena correos, extrae información y reduce tareas repetitivas.</p>
         </article>
@@ -95,15 +95,15 @@
     </div>
   </section>
 
-  <section class="section outcomes" id="resultados">
+  <section class="section outcomes scroll-reveal" id="resultados">
     <div class="container">
       <div class="section-head">
         <p class="kicker">Resultado</p>
-        <h2>El objetivo no es usar IA. Es operar con menos desgaste y más foco.</h2>
+        <h2 class="section-title">El objetivo no es usar IA. Es operar con menos desgaste y más foco.</h2>
       </div>
 
-      <div class="outcome-grid">
-        <article *ngFor="let outcome of outcomes">
+      <div class="outcome-grid auto-grid">
+        <article class="glass-card" *ngFor="let outcome of outcomes">
           <h3>{{ outcome.title }}</h3>
           <p>{{ outcome.text }}</p>
         </article>
@@ -111,12 +111,12 @@
     </div>
   </section>
 
-  <section class="section final-cta">
+  <section class="section final-cta scroll-reveal">
     <div class="container cta-panel">
       <div>
         <p class="kicker">Próximo paso</p>
-        <h2>Identifiquemos qué parte de tu operación debería dejar de depender del esfuerzo manual.</h2>
-        <p>
+        <h2 class="section-title">Identifiquemos qué parte de tu operación debería dejar de depender del esfuerzo manual.</h2>
+        <p class="section-copy">
           En una primera conversación entendemos tu contexto, detectamos oportunidades
           y definimos si Órbita puede construir una solución útil para tu empresa.
         </p>

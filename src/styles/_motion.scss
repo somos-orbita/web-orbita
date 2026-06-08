@@ -1,0 +1,73 @@
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: rotate(342deg);
+  }
+}
+
+.reveal {
+  animation: reveal-up .7s var(--ease-out) both;
+}
+
+.reveal-delay-1 {
+  animation-delay: .08s;
+}
+
+.reveal-delay-2 {
+  animation-delay: .16s;
+}
+
+.reveal-delay-3 {
+  animation-delay: .24s;
+}
+
+.reveal-delay-4 {
+  animation-delay: .32s;
+}
+
+.float-soft {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+@supports (animation-timeline: view()) {
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    animation: reveal-up .7s var(--ease-out) both;
+    animation-timeline: view();
+    animation-range: entry 12% cover 32%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

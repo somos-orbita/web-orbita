@@ -1,45 +1,3 @@
-.section {
-  padding: 90px 0;
-}
-
-.intro-grid,
-.diagnosis-grid,
-.cases-grid,
-.cta-panel {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.intro h2,
-.diagnosis h2,
-.section-head h2,
-.cases h2,
-.cta-panel h2 {
-  margin: 0;
-  font-size: clamp(2.2rem, 5vw, 4.6rem);
-  line-height: .96;
-  letter-spacing: -.07em;
-}
-
-.intro p,
-.diagnosis p,
-.section-head p:not(.kicker),
-.cta-panel p:not(.kicker) {
-  color: var(--muted);
-  font-size: 1.12rem;
-}
-
-.section-head {
-  max-width: 860px;
-  margin-bottom: 42px;
-}
-
-.diagnosis {
-  background: rgba(255,255,255,.025);
-}
-
 .analysis-list {
   display: grid;
   gap: 12px;
@@ -51,9 +9,7 @@
   gap: 14px;
   align-items: start;
   padding: 18px 20px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: rgba(255,255,255,.045);
+  border-radius: var(--radius-md);
 }
 
 .analysis-list span {
@@ -69,58 +25,64 @@
   margin: 0;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+.service-grid,
+.steps {
+  --grid-cols: 4;
 }
 
 .service-grid article {
   min-height: 270px;
   padding: 28px;
-  border: 1px solid var(--border);
-  border-radius: 26px;
-  background: var(--card);
 }
 
 .service-grid h3 {
-  font-size: 1.35rem;
+  margin: 0 0 14px;
+  font-size: var(--step-2);
+  line-height: 1.08;
   letter-spacing: -.04em;
 }
 
 .service-grid p {
+  margin: 0;
   color: var(--muted);
-}
-
-.steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
 }
 
 .steps article {
   min-height: 285px;
   padding: 28px;
-  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: var(--radius-lg);
   background: linear-gradient(135deg, var(--purple), #9274ff);
   overflow: hidden;
+  transition:
+    transform .28s var(--ease-soft),
+    box-shadow .28s var(--ease-soft);
+}
+
+.steps article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 60px rgba(125, 92, 255, .22);
 }
 
 .steps span {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: clamp(34px, 5vw, 56px);
   color: var(--lime);
-  font-size: 4rem;
+  font-size: clamp(2.9rem, 5vw, 3.7rem);
+  line-height: .9;
   font-weight: 900;
   letter-spacing: -.08em;
 }
 
-.steps p {
-  color: rgba(255,255,255,.82);
+.steps h3 {
+  margin: 0 0 12px;
+  font-size: var(--step-2);
+  line-height: 1.08;
 }
 
-.cases {
-  background: rgba(255,255,255,.025);
+.steps p {
+  margin: 0;
+  color: rgba(255,255,255,.82);
 }
 
 .case-list {
@@ -130,9 +92,6 @@
 
 .case-list article {
   padding: 24px;
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  background: var(--card);
 }
 
 .case-list strong {
@@ -146,16 +105,8 @@
   color: var(--muted);
 }
 
-.outcome-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
 .outcome-grid article {
   padding: 30px;
-  border: 1px solid var(--border);
-  border-radius: 24px;
   background:
     linear-gradient(180deg, rgba(215,255,79,.08), transparent 52%),
     var(--card);
@@ -163,7 +114,8 @@
 
 .outcome-grid h3 {
   margin: 0 0 12px;
-  font-size: 1.35rem;
+  font-size: var(--step-2);
+  line-height: 1.08;
   letter-spacing: -.04em;
 }
 
@@ -173,35 +125,23 @@
 }
 
 .cta-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(24px, 5vw, 48px);
   align-items: center;
   padding: 44px;
   border: 1px solid var(--border);
-  border-radius: 34px;
+  border-radius: var(--radius-lg);
   background: linear-gradient(135deg, rgba(125,92,255,.22), rgba(215,255,79,.12));
 }
 
 @media (max-width: 960px) {
-  .intro-grid,
-  .diagnosis-grid,
-  .cases-grid,
   .cta-panel {
     grid-template-columns: 1fr;
-  }
-
-  .service-grid,
-  .steps,
-  .outcome-grid {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 640px) {
-  .service-grid,
-  .steps,
-  .outcome-grid {
-    grid-template-columns: 1fr;
-  }
-
   .cta-panel {
     padding: 28px;
   }
