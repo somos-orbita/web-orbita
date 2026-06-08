@@ -1,0 +1,19 @@
+<section class="section section-muted diagnosis scroll-reveal" id="diagnostico">
+  <div class="container section-grid">
+    <div>
+      <p class="kicker">Diagnóstico</p>
+      <h2 class="section-title">Detectamos dónde la operación pierde tiempo y control.</h2>
+      <p class="section-copy">
+        Revisamos procesos comerciales, administrativos y estratégicos para distinguir
+        qué automatizar, qué asistir con IA y qué conviene rediseñar antes de implementar.
+      </p>
+    </div>
+
+    <div class="analysis-list" aria-label="Áreas que analiza Órbita">
+      <article class="glass-card" *ngFor="let area of analysisAreas">
+        <span></span>
+        <p>{{ area }}</p>
+      </article>
+    </div>
+  </div>
+</section>

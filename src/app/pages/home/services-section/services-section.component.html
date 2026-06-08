@@ -1,0 +1,19 @@
+<section class="section scroll-reveal" id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Ejecución</p>
+      <h2 class="section-title">Construimos herramientas ajustadas a tu forma de operar.</h2>
+      <p class="section-copy">
+        Cada solución nace del diagnóstico. Puede ser un flujo automático, una integración,
+        un asistente interno o una combinación de piezas conectadas.
+      </p>
+    </div>
+
+    <div class="service-grid auto-grid">
+      <article class="glass-card" *ngFor="let service of services">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.text }}</p>
+      </article>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<section class="section outcomes scroll-reveal" id="resultados">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">Resultado</p>
+      <h2 class="section-title">El objetivo es operar con menos desgaste y más foco.</h2>
+    </div>
+
+    <div class="outcome-grid auto-grid">
+      <article class="glass-card" *ngFor="let outcome of outcomes">
+        <h3>{{ outcome.title }}</h3>
+        <p>{{ outcome.text }}</p>
+      </article>
+    </div>
+  </div>
+</section>

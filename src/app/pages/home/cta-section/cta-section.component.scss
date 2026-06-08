@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+.cta-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(24px, 5vw, 48px);
+  align-items: center;
+  padding: 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(125, 92, 255, .18), rgba(215, 255, 79, .1));
+}
+
+@media (max-width: 960px) {
+  .cta-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-panel {
+    padding: 28px;
+  }
+}
