@@ -18,6 +18,14 @@
   letter-spacing: -.085em;
 }
 
+/* fade transition for rotating phrases */
+.hero-copy h1 {
+  transition: opacity 600ms ease;
+}
+.fade-out {
+  opacity: 0;
+}
+
 .lead {
   max-width: 710px;
   margin: 0 0 34px;

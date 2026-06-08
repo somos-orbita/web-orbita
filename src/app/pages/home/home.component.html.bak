@@ -1,6 +1,6 @@
 <main>
 
-  <orbita-hero [calendlyUrl]="calendlyUrl"></orbita-hero>
+  <orbita-hero></orbita-hero>
 
   <!-- <section class="hero">
     <div class="container hero-grid">

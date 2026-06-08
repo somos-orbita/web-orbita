@@ -2,7 +2,7 @@
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="kicker">Automatización + IA aplicada</p>
-      <h1>Menos fricción operacional. Más tiempo para crecer.</h1>
+      <h1 [class.fade-out]="isFading">{{ visiblePhrase }}</h1>
       <p class="lead">
         En Órbita conectamos personas, procesos y tecnología para que tu empresa
         deje de mover información manualmente y comience a operar con flujos inteligentes.
