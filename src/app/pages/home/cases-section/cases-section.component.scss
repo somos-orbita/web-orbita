@@ -7,17 +7,38 @@
   gap: 14px;
 }
 
-.case-list article {
-  padding: 24px;
+.case-card {
+  overflow: hidden;
 }
 
-.case-list strong {
+.case-card img {
+  width: 100%;
+  aspect-ratio: 16 / 8.4;
+  display: block;
+  object-fit: cover;
+}
+
+.case-card div {
+  padding: 22px;
+}
+
+.case-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: var(--step--1);
+  font-weight: 800;
+}
+
+.case-card strong {
   display: block;
   margin-bottom: 8px;
   color: var(--lime);
+  font-size: var(--step-1);
+  line-height: 1.2;
 }
 
-.case-list p {
+.case-card p {
   margin: 0;
   color: var(--muted);
 }

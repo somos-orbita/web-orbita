@@ -6,17 +6,13 @@
     </div>
 
     <div class="case-list">
-      <article class="glass-card">
-        <strong>Seguimiento comercial</strong>
-        <p>Un lead entra, se clasifica, se registra en CRM, se asigna responsable y se activa seguimiento.</p>
-      </article>
-      <article class="glass-card">
-        <strong>Control de gestión</strong>
-        <p>Datos de distintas fuentes se consolidan en reportes automáticos con alertas para decisiones clave.</p>
-      </article>
-      <article class="glass-card">
-        <strong>Trabajo administrativo asistido</strong>
-        <p>La IA resume documentos, ordena correos, extrae información y reduce tareas repetitivas.</p>
+      <article class="case-card glass-card" *ngFor="let item of cases">
+        <img [src]="item.image" [alt]="item.alt">
+        <div>
+          <span>{{ item.title }}</span>
+          <strong>{{ item.label }}</strong>
+          <p>{{ item.text }}</p>
+        </div>
       </article>
     </div>
   </div>
