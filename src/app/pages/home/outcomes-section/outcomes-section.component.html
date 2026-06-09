@@ -2,18 +2,18 @@
   <div class="container">
     <div class="section-head">
       <p class="kicker">Resultado</p>
-      <h2 class="section-title">La mejora se nota cuando las personas recuperan foco.</h2>
+      <h2 class="section-title">Resultados visibles en la forma en que opera tu equipo.</h2>
       <p class="section-copy">
-        No se trata de usar IA por usar IA. Se trata de conectar procesos, datos y equipos
-        para que cada área opere con menos fricción y mejor información.
+        Medimos la mejora en menos carga manual, más trazabilidad, mejor tiempo de respuesta
+        y procesos conectados alrededor del negocio.
       </p>
     </div>
 
-    <div class="outcome-grid">
-      <article class="glass-card" *ngFor="let outcome of outcomes">
-        <span>{{ outcome.value }}</span>
-        <h3>{{ outcome.title }}</h3>
-        <p>{{ outcome.text }}</p>
+    <div class="metric-grid">
+      <article class="metric-card" *ngFor="let metric of metrics">
+        <span>{{ metric.value }}</span>
+        <strong>{{ metric.label }}</strong>
+        <p>{{ metric.text }}</p>
       </article>
     </div>
   </div>

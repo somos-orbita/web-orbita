@@ -9,21 +9,26 @@ import { NgFor } from '@angular/common';
   styleUrl: './outcomes-section.component.scss'
 })
 export class OutcomesSectionComponent {
-  readonly outcomes = [
+  readonly metrics = [
     {
-      value: '01',
-      title: 'Equipos con más foco',
-      text: 'Las personas dejan de perseguir datos y recordatorios para concentrarse en clientes, decisiones y crecimiento.'
+      value: '- tareas',
+      label: 'manuales',
+      text: 'Flujos que reducen copias de datos, seguimientos repetidos y trabajo operativo invisible.'
     },
     {
-      value: '02',
-      title: 'Procesos más trazables',
-      text: 'Cada flujo queda conectado, medible y visible para que la operación no dependa de tareas invisibles.'
+      value: '+ trazabilidad',
+      label: 'operacional',
+      text: 'Procesos conectados para saber qué pasó, quién intervino y dónde se requiere acción.'
     },
     {
-      value: '03',
-      title: 'IA aplicada con criterio',
-      text: 'Automatizamos lo repetitivo y dejamos espacio para que el equipo intervenga donde importa el juicio humano.'
+      value: '+ velocidad',
+      label: 'de respuesta',
+      text: 'Información ordenada y alertas oportunas para que las decisiones no lleguen tarde.'
+    },
+    {
+      value: '1 ecosistema',
+      label: 'conectado',
+      text: 'Personas, sistemas e IA trabajando alrededor de la operación real de tu empresa.'
     }
   ];
 }
