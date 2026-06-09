@@ -11,22 +11,22 @@ import { NgFor } from '@angular/common';
 export class OutcomesSectionComponent {
   readonly metrics = [
     {
-      value: '- tareas',
-      label: 'manuales',
+      value: 'Menos',
+      label: 'tareas manuales',
       text: 'Flujos que reducen copias de datos, seguimientos repetidos y trabajo operativo invisible.'
     },
     {
-      value: '+ trazabilidad',
-      label: 'operacional',
+      value: 'Más',
+      label: 'trazabilidad',
       text: 'Procesos conectados para saber qué pasó, quién intervino y dónde se requiere acción.'
     },
     {
-      value: '+ velocidad',
-      label: 'de respuesta',
+      value: 'Mejor',
+      label: 'tiempo de respuesta',
       text: 'Información ordenada y alertas oportunas para que las decisiones no lleguen tarde.'
     },
     {
-      value: '1 ecosistema',
+      value: 'Todo',
       label: 'conectado',
       text: 'Personas, sistemas e IA trabajando alrededor de la operación real de tu empresa.'
     }
