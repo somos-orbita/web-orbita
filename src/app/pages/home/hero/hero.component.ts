@@ -17,4 +17,13 @@ export class HeroComponent {
     'Operación asistida por IA',
     'Integraciones entre tus sistemas actuales'
   ];
+
+  readonly ecosystemNodes = [
+    'Personas',
+    'CRM',
+    'ERP',
+    'WhatsApp',
+    'Reportes',
+    'IA'
+  ];
 }
